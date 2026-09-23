@@ -12,7 +12,7 @@
 ## 从 GitHub 安装
 
 ```powershell
-git clone https://github.com/<你的账户>/ymjh-chuanyin-collector.git
+git clone https://github.com/tudoufuwu/ymjh-chuanyin-collector.git
 cd ymjh-chuanyin-collector
 .\scripts\setup.ps1
 ```

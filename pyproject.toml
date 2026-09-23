@@ -28,9 +28,9 @@ dependencies = []
 ymjh-chuanyin = "ymjh_chuanyin.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/OWNER/ymjh-chuanyin-collector"
-Documentation = "https://github.com/OWNER/ymjh-chuanyin-collector/tree/main/docs"
-Issues = "https://github.com/OWNER/ymjh-chuanyin-collector/issues"
+Homepage = "https://github.com/tudoufuwu/ymjh-chuanyin-collector"
+Documentation = "https://github.com/tudoufuwu/ymjh-chuanyin-collector/tree/main/docs"
+Issues = "https://github.com/tudoufuwu/ymjh-chuanyin-collector/issues"
 
 [tool.setuptools]
 package-dir = { "" = "src" }

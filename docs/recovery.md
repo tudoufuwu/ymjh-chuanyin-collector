@@ -10,7 +10,7 @@ GitHub 仓库保存的是程序和说明，**不保存你的真实聊天记录�
 ## 1. 恢复程序
 
 ```powershell
-git clone https://github.com/<你的账户>/ymjh-chuanyin-collector.git
+git clone https://github.com/tudoufuwu/ymjh-chuanyin-collector.git
 cd ymjh-chuanyin-collector
 .\scripts\setup.ps1
 .\.venv\Scripts\python.exe -m ymjh_chuanyin init --root .
