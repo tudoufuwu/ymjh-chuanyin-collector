@@ -1,0 +1,4 @@
+include README.md LICENSE
+recursive-include src/ymjh_chuanyin/web/static *.html *.css *.js
+recursive-include schema *.json
+recursive-include examples *.jsonl

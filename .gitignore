@@ -1,0 +1,57 @@
+# Local runtime data. Never commit real chat, databases, logs, or recovery material.
+/var/
+/data/
+/evidence/
+/backups/
+/reports/generated/
+
+# Local configuration and credentials.
+.env
+.env.*
+!.env.example
+*.clixml
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Archives and captured material.
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.jsonl
+!examples/*.jsonl
+*.pcap
+*.pcapng
+*.dmp
+*.dump
+*.log
+*.out
+*.err
+*.zip
+
+# Python and build outputs.
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Editors and operating-system files.
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Game resources and local image captures require separate distribution rights.
+/assets/private/
+/assets/official_emoji/

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ymjh-chuanyin/raw-chat-event.schema.json",
+  "title": "一梦江湖传音采集原始聊天事件",
+  "description": "本地 JSONL 中每一行应满足的最小事件对象。示例仅使用合成数据。",
+  "type": "object",
+  "required": ["event_id", "time", "channel", "text", "source"],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "time": { "type": "string", "format": "date-time" },
+    "observed_time": { "type": "string", "format": "date-time" },
+    "server_timestamp": { "type": "number" },
+    "channel": { "type": "string", "minLength": 1 },
+    "subchannel": { "type": ["string", "null"] },
+    "role_id": { "type": ["string", "null"] },
+    "role_name": { "type": ["string", "null"] },
+    "level": { "type": ["integer", "null"], "minimum": 0 },
+    "text": { "type": "string" },
+    "source": { "type": "string", "minLength": 1 },
+    "message_kind_code": { "type": ["integer", "null"] },
+    "event_type_code": { "type": ["integer", "null"] },
+    "route_code": { "type": ["integer", "null"] }
+  },
+  "additionalProperties": true
+}

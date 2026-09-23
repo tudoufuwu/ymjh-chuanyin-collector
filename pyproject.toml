@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ymjh-chuanyin"
+version = "0.1.0"
+description = "一梦江湖传音采集：Windows 本地聊天采集、归档与查询工具"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+  { name = "一梦江湖传音采集贡献者" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Win32 (MS Windows)",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Utilities",
+]
+dependencies = []
+
+[project.scripts]
+ymjh-chuanyin = "ymjh_chuanyin.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/OWNER/ymjh-chuanyin-collector"
+Documentation = "https://github.com/OWNER/ymjh-chuanyin-collector/tree/main/docs"
+Issues = "https://github.com/OWNER/ymjh-chuanyin-collector/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ymjh_chuanyin = ["web/static/*.html", "web/static/*.css", "web/static/*.js"]

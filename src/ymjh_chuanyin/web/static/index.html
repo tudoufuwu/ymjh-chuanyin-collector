@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一梦江湖传音采集</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">LOCAL ARCHIVE</p>
+      <h1>一梦江湖传音采集</h1>
+      <p class="subtitle">本地 JSONL · SQLite · 浏览器查询</p>
+    </div>
+    <div id="health" class="health">正在连接本地归档…</div>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="筛选条件">
+      <label>频道
+        <select id="category"><option value="">全部频道</option></select>
+      </label>
+      <label>日期
+        <select id="date"><option value="">全部日期</option></select>
+      </label>
+      <label>正文
+        <input id="query" type="search" placeholder="搜索聊天内容">
+      </label>
+      <label>角色名
+        <input id="role-name" type="search" placeholder="包含的角色名">
+      </label>
+      <label>角色 ID
+        <input id="role-id" inputmode="numeric" placeholder="精确角色 ID">
+      </label>
+      <button id="search" type="button">查询</button>
+      <button id="reset" type="button" class="secondary">清除条件</button>
+    </section>
+
+    <section class="summary" id="summary">正在读取统计…</section>
+    <section id="messages" class="messages" aria-live="polite"></section>
+    <nav class="pager" aria-label="分页">
+      <button id="previous" type="button" class="secondary">上一页</button>
+      <span id="page">第 1 页</span>
+      <button id="next" type="button" class="secondary">下一页</button>
+    </nav>
+  </main>
+
+  <template id="message-template">
+    <article class="message">
+      <div class="message-head">
+        <span class="badge"></span>
+        <strong class="name"></strong>
+        <span class="role-id"></span>
+        <time></time>
+      </div>
+      <p class="text"></p>
+    </article>
+  </template>
+  <script src="/app.js"></script>
+</body>
+</html>
